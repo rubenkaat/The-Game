@@ -6,8 +6,9 @@ if(prompt("Het is koud buiten en je hebt het gevoel dat je word bekeken. wil je 
 
 		if(prompt("Je besluit de kelder binnen te gaan. Binnen in de kelder is het pikdonker, je ziet een lichtknopje, doe je het licht aan?") == "ja"){
 
+			while (kamer !== "trap" && kamer !== "keuken" && kamer !== "vluchten"){
 			var kamer = prompt("je loopt de trap op de kelder uit. Je hebt nu drie opties: keuken, trap, vluchten");
-
+			}
 			if (kamer =="trap"){
 
 				if(prompt("Je komt aan op de bovenverdieping en ziet twee open deuren: Links en Rechtdoor. Welke deur neem je?") =="links"){
@@ -49,9 +50,8 @@ if(prompt("Het is koud buiten en je hebt het gevoel dat je word bekeken. wil je 
 				alert("Je vlucht naar buiten toe de koude nacht in. Je vriest dood.")
 			}else if (kamer =="keuken"){
 				alert("Ik heb geen idee wat er gebeurt maar het eindigt met je dood, jammer hoor.")
-			}else{
-				alert("dat was geen optie! begin maar weer opnieuw!")
 			}
+
 
 		}else{
 			alert("Je besluit het licht niet aan te doen en voorzichtig verder te lopen. Helaas zie je daardoor het grote gat in de grond niet en val je erin.")
