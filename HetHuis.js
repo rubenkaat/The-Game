@@ -6,9 +6,10 @@ if(prompt("Het is koud buiten en je hebt het gevoel dat je word bekeken. wil je 
 
 		if(prompt("Je besluit de kelder binnen te gaan. Binnen in de kelder is het pikdonker, je ziet een lichtknopje, doe je het licht aan?") == "ja"){
 
-			while (kamer !== "trap" && kamer !== "keuken" && kamer !== "vluchten"){
-			var kamer = prompt("je loopt de trap op de kelder uit. Je hebt nu drie opties: keuken, trap, vluchten");
+			do {var kamer = prompt("je loopt de trap op de kelder uit. Je hebt nu drie opties: keuken, trap, vluchten");
 			}
+			while (kamer !== "trap" && kamer !== "keuken" && kamer !== "vluchten")
+				
 			if (kamer =="trap"){
 
 				if(prompt("Je komt aan op de bovenverdieping en ziet twee open deuren: Links en Rechtdoor. Welke deur neem je?") =="links"){
